@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="https://icon-icons.com/downloadimage.php?id=116350&root=1847/ICO/512/&file=hacker_116350.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ANONYMOUS - ETERSEC</title>
+        <style>
+            body{
+                width: 100%;
+                margin: 0;
+                border: 0;
+                background:url('https://i.imgur.com/FvDKKbP.png');
+                background-size:auto;
+                background-repeat:no-repeat;
+                text-align: center;
+                color: #fff;
+            }
+            .logo{
+                margin: 0;
+                border: 0;
+                width: 390px;
+            }
+            h1,h2,h3,marquee,a{
+                font-family: 'Roboto Slab', serif;
+                color:#fff;
+            }
+            marquee{
+                right: 0;
+            }
+            .persons{
+                position: fixed;
+                bottom: 0;
+                z-index:-1;
+                width: 100%;
+                margin: 0;
+                border:0;
+                left: 0;
+            }
+            .persons img{
+                width: 100%;
+                bottom: 0;
+                margin: 0;
+                border:0;
+            }
+            .message{
+                text-align: center;
+                text-shadow: 0 0 3px #000, 0 0 5px #000;
+                font-family: 'Roboto Slab', serif;
+                font-size: 1.2em;
+            }
+            @media (max-width: 400px ) {
+                .message{
+                    font-family: 'Roboto Slab', serif;
+                    font-size: 13px;
+                }
+            }
+            a{
+                background: rgb(0, 174, 255);
+                padding: 15px 20px 15px 20px;
+                border-radius: 25px;
+                text-decoration: none;
+            }
+            a:hover{
+                background: rgba(0, 174, 255, 0.863);
+            }
+        </style>
+    </head>
+    <body>
+        <marquee>EterSec - AnonymousBrNews</marquee>
+        <img src="https://i.imgur.com/OEunCKU.png" alt="ETERSEC LANÇANDO A BRABA" class="logo">
+        <h1>DEFACEMENT IN PROTEST</h1>
+        <h2>#OPDONTSTOP</h2>
+        <div class="message">
+            O grande aumento de mortes no Brasil poderia ser evitado.<br>
+            Mas graças a má conduta e gestão do Presidente Bolsonaro,<br>
+            o Brasil está em colapso em vários âmbitos sociais.<br>
+            Não podemos mais tolerar esse governo do ódio, fascista e genocida. <br>
+            Já estamos fartos do seu desgoverno e das suas ameaças. <br>
+            Jair Messias Bolsonaro, você e a sua equipe de bandidos irão cair.
+        </div>
+        <br><br>
+        <a href="https://twitter.com/etersec" target="_blank">TWITTER</a>
+        <div id="player" style="display:block;width:0;height:1;"></div>
+        <div class="persons">
+            <img src="https://i.imgur.com/lWqdfLf.png" alt="ETERSEC LANÇANDO A BRABA">
+        </div>
+        <script>
+            var tag = document.createElement('script');
+        
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        
+            function onYouTubeIframeAPIReady() {
+            var player;
+            player = new YT.Player('player', {
+                videoId: 'YdmZKO9Ii1Q', // YouTube Video ID
+                width: 0, // Player width (in px)
+                height: 0, // Player height (in px)
+                playerVars: {
+                autoplay: 1, // Auto-play the video on load
+                controls: 1, // Show pause/play buttons in player
+                showinfo: 0, // Hide the video title
+                modestbranding: 1, // Hide the Youtube Logo
+                loop: 1, // Run the video in a loop
+                fs: 0, // Hide the full screen button
+                cc_load_policy: 0, // Hide closed captions
+                iv_load_policy: 3, // Hide the Video Annotations
+                autohide: 0 // Hide video controls when playing
+                },
+                events: {
+                onReady: function(e) {
+                    event.target.playVideo();
+                }
+                }
+            });
+            }
+        </script>  
+    </body>
+</html>
